@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 2% 23% 24.5% 24%
+}
+
+/* Header */
+
+#logo {
+  width: 20%;
+  height: 40px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px
+}
+
+header {
+  display: flex;
+}
+
+/* Navigation */
+
+nav {
+  margin-left: 10%;
+}
+
+
+ul {
+  display: flex;
+}
+
+
+li {
+  margin-left: 50px;
+  list-style-type: none;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+li a:hover {
+  text-decoration: underline black;
+  color: orange;
+  transform: scale(1.1)
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(63, 60, 60);
+  font-weight: 100;
+}
+
+#sog {
+  cursor: pointer;
+  width: 70px;
+  background-color: black;
+  height: 25px;
+  color: white;
+  padding: 5px;
+  margin-top: 20px
+}
+
+#input {
+  margin-left: 150px;
+  height: 25px;
+  background-color: yellow;
+  margin-top: 20px;
+  width: 250px;
+}
+
+
+
+/* sektion 1 */
+
+#s1 {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: 65% 8% 1fr;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/hero.jpg);
+  background-attachment: fixed;background-size: cover;
+}
+
+#hero {
+
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+
+}
+
+aside {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+  background-color: black;
+  animation: ind 5s ease-in-out;
+}
+
+@keyframes ind {
+  0% {
+      transform: scale(0.0)
+  }
+
+  70% {
+      transform: scale(1.2)
+  }
+
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 0px 10px 30px
+}
+
+span {
+  color: yellow
+}
+
+
+/* sektion 2 */
+
+
+#s2 {
+  display: grid;
+  grid-template-columns: 50% 22% 28%;
+  grid-template-rows: 29% 9% 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+#aside2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: black
+}
+
+#event {
+  width: 75%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  height: 100%;
+
+
+}
+
+h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px 0px 10px 0px;
+  margin-left: 450px
+}
+
+#pbox {
+  grid-column: 3/-1;
+  grid-row: 1/-1;
+  background-color: yellow;
+}
+
+#udklip {
+  margin: 90px 20px 20px 30px;
+  width: 40%
+}
+
+
+
+/* Sektion 3 */
+
+#s3 {
+  display: grid;
+  grid-template-columns: 25% 28% 18% 18% 5% 1fr;
+  grid-template-rows: 22% 8% 25% 1fr;
+  width: 100%;
+  height: 100vh;
+  grid-gap: 30px
+}
+
+#aside3 {
+  grid-column: 4/6;
+  grid-row: 2/3;
+  background-color: black
+}
+
+h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px 0px 10px 30px
+}
+
+#pbox2 {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  background-color: yellow
+}
+
+#udklip2 {
+  margin: 70px 20px 20px 20px;
+}
+
+.sko {
+  width: 28%;
+  border: solid black 1px;
+  margin: 5px 5px 5px 5px;
+}
+
+.sko2 {
+  width: 28%;
+  border: solid black 1px;
+  margin: 5px 5px 5px 5px;
+}
+
+#fig {
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+
+#fig2 {
+  grid-column: 2/5;
+  grid-row: 4/-1;
+}
+
+
+/* Sektion 4 */
+
+#s4 {
+  display: grid;
+  grid-template-columns: 30% 20% 10% 20% 1fr;
+  grid-template-rows: 30% 8% 20% 1fr;
+  width: 100%;
+  height: 100vh;
+
+}
+
+#map {
+  grid-column: 1/3;
+  grid-row: 1/1;
+  width: 100%;
+}
+
+address {
+  grid-column: 1/3;
+  grid-row: 4/-1;
+  background-color: black
+}
+
+
+#aside4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: yellow
+}
+
+h4 {
+  color: black;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 0px 10px 30px;
+  margin-left: 200px
+}
+
+#udklip4 {
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+form {
+  width: 40%;
+  margin-left: 30%
+}
+
+#right {
+  grid-column: 3/-1;
+  grid-row: 1/-1;
+
+}
+
+h5 {
+  margin: 10% 0% 5% 30%;
+  font-size: 35px
+}
+
+label{margin: 20px;
+ 
+}
+.formInput {
+  width: 300px;
+  height: 30px;
+  background-color: yellow;
+  margin-bottom: 20px
+}
+
+textarea {
+  background-color: yellow;
+  width: 300px;
+  margin-bottom: 20px
+}
+
+#sub {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  padding: 4px 3px 3px 3px
+}
